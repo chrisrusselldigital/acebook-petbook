@@ -9,8 +9,8 @@ class SocialCapybarasController < ApplicationController
   end
 
   def create
-    @social_capybara = SocialCapybara.create(:member => "Millie")
-    redirect_to root_path
+    @social_capybara = SocialCapybara.create(member: current_user.firstname)
+    redirect_to social_capybaras_path
   end
 
   private
