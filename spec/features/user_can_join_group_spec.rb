@@ -6,7 +6,7 @@ RSpec.feature "User can join a group", type: :feature do
     sign_up_successfully
 
     click_link 'Social capybaras'
-    click_link 'Join!'
-    expect(page).to have_content "Members: Millie"
+    click_button 'Join!'
+    expect(page).to have_content "Millie"
   end
 end
