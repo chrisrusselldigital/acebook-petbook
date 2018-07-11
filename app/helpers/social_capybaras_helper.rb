@@ -1,0 +1,2 @@
+module SocialCapybarasHelper
+end

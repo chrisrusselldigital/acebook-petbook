@@ -1,0 +1,3 @@
+class SocialCapybara < ApplicationRecord
+
+end
