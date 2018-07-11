@@ -41,7 +41,7 @@ ActiveRecord::Schema.define(version: 20180710134434) do
   end
 
   create_table "social_capybaras", force: :cascade do |t|
-    t.integer "members"
+    t.string "member"
   end
 
   create_table "users", force: :cascade do |t|

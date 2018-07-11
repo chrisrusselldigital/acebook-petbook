@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   resources :posts
   resources :comments
   resources :likes
+  resources :groups
+  resources :social_capybaras
 end
 
 
