@@ -30,15 +30,15 @@ class CommentsController < ApplicationController
   def correct_comment_owner
     comment = current_user.comments.find_by(id: params[:id])
     comment.nil?
-   end
+  end
 
-   def correct_post_owner
-     comment = Comment.find(params[:id])
-     post = Post.find_by(id: comment.post_id)
-     post.user_id != current_user.id
-   end
+  def correct_post_owner
+    comment = Comment.find(params[:id])
+    post = Post.find_by(id: comment.post_id)
+    post.user_id != current_user.id
+  end
 
-   def validate_delete_permission
+  def validate_delete_permission
     if correct_comment_owner && correct_post_owner
       redirect_to root_url
     else
