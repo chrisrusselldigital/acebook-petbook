@@ -7,4 +7,9 @@ class User < ApplicationRecord
   has_many :relationships
 
   mount_uploader :avatar, AvatarUploader
+
+  def join(group_name)
+    groups << group_name
+  end
+
 end
