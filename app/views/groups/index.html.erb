@@ -1,0 +1,10 @@
+<ul>
+  <%= form_for (@group) do |form| %>
+    <br>
+    <%= @groups.each do |group| %>
+    <%= form.label group.name %>
+    <%= form.submit %>
+    <br>
+    <% end %>
+  <% end %>
+</ul>

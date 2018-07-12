@@ -8,8 +8,16 @@ class GroupsController < ApplicationController
     @groups = Group.all
   end
 
-  def create
-    @group = Group.create(member: current_user.firstname)
+  # def create
+  #   # @group = Group.create(name: "test-name")
+  #   redirect_to groups_path
+  # end
+
+  def update
+    @group = Group.new
+    @group.update_attributes(
+      name: "new group"
+    )
     redirect_to groups_path
   end
 
