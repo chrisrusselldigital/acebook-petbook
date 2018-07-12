@@ -8,5 +8,8 @@ class User < ApplicationRecord
   has_many :likes
   has_many :comments, dependent: :destroy # will destroy all comments that were associated with user if user is deleted
   mount_uploader :avatar, AvatarUploader
-  
+
+  has_many :relationships
+
+
 end
