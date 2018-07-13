@@ -40,13 +40,6 @@ ActiveRecord::Schema.define(version: 20180712100013) do
     t.integer "user_id"
   end
 
-  create_table "relationships", force: :cascade do |t|
-    t.integer "user_id"
-    t.integer "group_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "social_capybaras", force: :cascade do |t|
     t.string "member"
   end
