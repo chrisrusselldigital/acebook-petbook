@@ -2,4 +2,8 @@
 <br>
   <%= group.name %> -
   <%= group.relationships.count %>
+  <% current_user.relationships.create(group_id: group.id)%>
+
 <% end %>
+
+<button type="button">Join!</button>
