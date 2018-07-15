@@ -1,0 +1,12 @@
+<%= form_for(@social_capybara) do |form| %>
+  <%= form.label :"Wanna join our group?" %><br>
+  <%= form.submit "Join!" %>
+<% end %>
+
+<br>
+<h3> Members: </h3>
+<ul>
+  <% @social_capybaras.each do |capybara| %>
+  <td><%= capybara.member %></td>
+  <% end %>
+</ul>

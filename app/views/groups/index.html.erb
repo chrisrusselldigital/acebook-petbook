@@ -1,0 +1,13 @@
+<% @groups.each do |group| %>
+<br>
+  <%= group.name %> -
+  <%= group.relationships.count %>
+<<<<<<< HEAD
+  <% current_user.relationships.create(group_id: group.id)%>
+
+<% end %>
+
+<button type="button">Join!</button>
+=======
+<% end %>
+>>>>>>> 3c95074708e8eed847418472b99e899e110844cf
